@@ -1,8 +1,10 @@
 # Loot directory (stolen tokens/cookies)
-loot/
+loot/*
+!loot/README.md
 
 # Generated payloads
-payloads/
+payloads/*
+!payloads/README.md
 
 # Python cache
 __pycache__/

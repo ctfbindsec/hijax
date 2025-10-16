@@ -37,6 +37,8 @@ Hijax is a modular red team framework built to demonstrate and simulate **sessio
 
 ##  Installation
 
+> 📋 For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
 ### Quick Setup (Recommended)
 
 Run the automated setup script:
