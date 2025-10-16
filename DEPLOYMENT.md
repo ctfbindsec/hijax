@@ -158,6 +158,8 @@ ngrok http 8080
 
 ### Integration with ScamTrack
 
+> **Note:** ScamTrack is a social engineering payload delivery platform. Hijax was designed to work natively with ScamTrack for browser-based payload delivery. See the main README for more details about ScamTrack integration.
+
 1. Copy generated payload to ScamTrack's `payloads/` directory
 2. Start ScamTrack server
 3. Use the Ngrok URL to deliver the payload

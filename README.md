@@ -44,7 +44,7 @@ Hijax is a modular red team framework built to demonstrate and simulate **sessio
 Run the automated setup script:
 
 ```bash
-git clone https://github.com/ekomsSavior/hijax.git
+git clone https://github.com/ctfbindsec/hijax.git
 cd hijax
 chmod +x setup.sh
 ./setup.sh
@@ -61,7 +61,7 @@ This will:
 ### Clone the Repo
 
 ```bash
-git clone https://github.com/ekomsSavior/hijax.git
+git clone https://github.com/ctfbindsec/hijax.git
 cd hijax
 ```
 
