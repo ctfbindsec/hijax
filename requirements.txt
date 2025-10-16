@@ -1,0 +1,6 @@
+selenium
+requests
+browser-cookie3
+beautifulsoup4
+pycryptodome
+pyperclip

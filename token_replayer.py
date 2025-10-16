@@ -13,6 +13,14 @@ def choose_target():
     return input("Your choice: ").strip()
 
 def extract_token(service_name):
+    # Ensure loot directory exists
+    loot_dir = os.path.dirname(LOOT_FILE)
+    if loot_dir and not os.path.exists(loot_dir):
+        os.makedirs(loot_dir, exist_ok=True)
+    
+    if not os.path.exists(LOOT_FILE):
+        return None
+    
     with open(LOOT_FILE, "r") as f:
         lines = f.readlines()
         for line in lines:
