@@ -37,10 +37,31 @@ Hijax is a modular red team framework built to demonstrate and simulate **sessio
 
 ##  Installation
 
+> 📋 For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+git clone https://github.com/ctfbindsec/hijax.git
+cd hijax
+chmod +x setup.sh
+./setup.sh
+```
+
+This will:
+* Create required directories (`loot/`, `payloads/`)
+* Install system dependencies (chromium-driver, curl, jq)
+* Install Python dependencies from `requirements.txt`
+* Set proper permissions on scripts
+
+### Manual Installation
+
 ### Clone the Repo
 
 ```bash
-git clone https://github.com/ekomsSavior/hijax.git
+git clone https://github.com/ctfbindsec/hijax.git
 cd hijax
 ```
 
@@ -48,7 +69,19 @@ cd hijax
 
 ```bash
 sudo apt update && sudo apt install -y python3 python3-pip chromium-driver curl jq unzip
+pip3 install -r requirements.txt
+```
+
+Or install packages individually:
+
+```bash
 pip3 install selenium requests browser-cookie3 beautifulsoup4 pycryptodome pyperclip --break-system-packages
+```
+
+### Create Required Directories
+
+```bash
+mkdir -p loot payloads
 ```
 
 ---

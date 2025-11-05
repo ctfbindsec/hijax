@@ -22,6 +22,11 @@ def choose_target():
 
 def load_cookies_for_domain(domain):
     cookies = []
+    # Ensure loot directory exists
+    loot_dir = os.path.dirname(LOOT_FILE)
+    if loot_dir and not os.path.exists(loot_dir):
+        os.makedirs(loot_dir, exist_ok=True)
+    
     if not os.path.exists(LOOT_FILE):
         print("[!] No loot file found.")
         return cookies
